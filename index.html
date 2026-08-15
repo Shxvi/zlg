@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zapret List Generator — Главная</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jszip.min.js"></script>
+</head>
+<body class="page-hub">
+    <header class="app-header">
+        <div class="header-left">
+            <div class="header-brand">
+                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                <span>Zapret List Generator</span>
+            </div>
+            <div class="header-divider"></div>
+            <nav class="nav-tabs">
+                <a href="index.html" class="nav-tab active">
+                    <svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+                    <span>Главная</span>
+                </a>
+                <a href="list.html" class="nav-tab">
+                    <svg viewBox="0 0 24 24"><path d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zM7 7v2h14V7H7z"/></svg>
+                    <span>Домены (List)</span>
+                </a>
+                <a href="ipset.html" class="nav-tab">
+                    <svg viewBox="0 0 24 24"><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-1 9H9V9h10v2zm-4 4H9v-2h6v2zm4-8H9V5h10v2z"/></svg>
+                    <span>IP-адреса (IPSet)</span>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="hub-container">
+        <!-- Блок Zapret -->
+        <section class="card">
+            <div class="card-header">
+                <div class="card-header-main">
+                    <svg class="card-icon" viewBox="0 0 24 24"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/></svg>
+                    <div class="card-title-group">
+                        <h2>Zapret (Discord & YouTube Fix)</h2>
+                        <p>Бинарные сборки winws и скрипты обхода DPI для Windows</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="btn-row">
+                    <a id="githubReleaseBtn" href="https://github.com/Flowseal/zapret-discord-youtube/releases/latest" target="_blank" class="btn btn-accent">
+                        <svg viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+                        <span id="githubReleaseText">Скачать Zapret (.zip)</span>
+                    </a>
+                    <a href="https://github.com/Flowseal/zapret-discord-youtube" target="_blank" class="btn">
+                        <svg viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                        <span>GitHub</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Списки правил -->
+        <section class="card">
+            <div class="card-header">
+                <div class="card-header-main">
+                    <svg class="card-icon" viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+                    <div class="card-title-group">
+                        <h2>Базовые наборы правил</h2>
+                        <p>Файлы для директории zapret/lists</p>
+                    </div>
+                </div>
+                <button class="btn btn-accent" onclick="downloadAllBundleZip()">
+                    <svg viewBox="0 0 24 24"><path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z"/></svg>
+                    <span>Скачать всё (.zip)</span>
+                </button>
+            </div>
+            <div class="card-body">
+                <div class="list-table">
+                    <div class="list-row">
+                        <div class="row-info">
+                            <span class="row-title">general-list.txt</span>
+                            <span class="row-sub">Заблокированные домены</span>
+                        </div>
+                        <button class="btn" onclick="downloadDirectFile('premade-list.txt', 'general-list.txt')">
+                            <svg viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+                            <span>Скачать</span>
+                        </button>
+                    </div>
+
+                    <div class="list-row">
+                        <div class="row-info">
+                            <span class="row-title">ipset-all.txt</span>
+                            <span class="row-sub">IP-адреса и подсети</span>
+                        </div>
+                        <button class="btn" onclick="downloadDirectFile('premade-ipset.txt', 'ipset-all.txt')">
+                            <svg viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+                            <span>Скачать</span>
+                        </button>
+                    </div>
+
+                    <div class="list-row">
+                        <div class="row-info">
+                            <span class="row-title">list-exclude.txt</span>
+                            <span class="row-sub">Исключения локальных доменов</span>
+                        </div>
+                        <button class="btn" onclick="downloadDirectFile('list-exclude.txt', 'list-exclude.txt')">
+                            <svg viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+                            <span>Скачать</span>
+                        </button>
+                    </div>
+
+                    <div class="list-row">
+                        <div class="row-info">
+                            <span class="row-title">ipset-exclude.txt</span>
+                            <span class="row-sub">Исключения локальных подсетей (RFC 1918)</span>
+                        </div>
+                        <button class="btn" onclick="downloadDirectFile('ipset-exclude.txt', 'ipset-exclude.txt')">
+                            <svg viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+                            <span>Скачать</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Редакторы -->
+        <section class="card">
+            <div class="card-header">
+                <div class="card-header-main">
+                    <svg class="card-icon" viewBox="0 0 24 24"><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/></svg>
+                    <div class="card-title-group">
+                        <h2>Редакторы списков</h2>
+                        <p>Обработка, фильтрация и валидация собственных правил</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="list-table">
+                    <div class="list-row">
+                        <div class="row-info">
+                            <span class="row-title">Редактор List (Домены)</span>
+                            <span class="row-sub">Дедупликация, схлопывание поддоменов, IDN Punycode, группировка, DoH-чекер</span>
+                        </div>
+                        <a href="list.html" class="btn">
+                            <svg viewBox="0 0 24 24"><path d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zM7 7v2h14V7H7z"/></svg>
+                            <span>Открыть</span>
+                        </a>
+                    </div>
+
+                    <div class="list-row">
+                        <div class="row-info">
+                            <span class="row-title">Редактор IPSet (IP / CIDR)</span>
+                            <span class="row-sub">Слияние подсетей, очистка Bogon-диапазонов, проверка доступности хостов</span>
+                        </div>
+                        <a href="ipset.html" class="btn">
+                            <svg viewBox="0 0 24 24"><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-1 9H9V9h10v2zm-4 4H9v-2h6v2zm4-8H9V5h10v2z"/></svg>
+                            <span>Открыть</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="app-statusbar">
+        <div class="metrics">
+            <div class="metric-item">Статус: <span>Готов</span></div>
+        </div>
+        <div class="status-msg">Zapret List Generator</div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

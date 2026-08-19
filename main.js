@@ -42,7 +42,7 @@ async function downloadAllBundleZip() {
 
     try {
         const files = [
-            { url: 'premade-list.txt', name: 'general-list.txt' },
+            { url: 'premade-list.txt', name: 'list-general.txt' },
             { url: 'premade-ipset.txt', name: 'ipset-all.txt' },
             { url: 'list-exclude.txt', name: 'list-exclude.txt' },
             { url: 'ipset-exclude.txt', name: 'ipset-exclude.txt' }
